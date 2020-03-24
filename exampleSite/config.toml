@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://uilitex.netlify.com/"
 languageCode = "en-us"
 title = "UILiteX"
 theme = "uilitex"
