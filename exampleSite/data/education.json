@@ -1,0 +1,17 @@
+{
+  "title": "Education",
+  "education": [
+    {
+      "period": "Apr 2014 - Mar 2018",
+      "school": "X University",
+      "url": "https://example.com",
+      "description": "Bachelor of Engineering."
+    },
+    {
+      "period": "Apr 2018 - Mar 2020",
+      "school": "Y University",
+      "url": "https://example.com",
+      "description": "Master of Engineering."
+    }
+  ]
+}

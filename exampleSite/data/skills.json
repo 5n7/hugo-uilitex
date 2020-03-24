@@ -1,0 +1,21 @@
+{
+  "title": "Skills",
+  "skills": [
+    {
+      "name": "languages",
+      "skills": [
+        { "name": "HTML", "point": "40", "icon": "fab fa-html5" },
+        { "name": "CSS", "point": "40", "icon": "fab fa-css3" },
+        { "name": "JavaScript", "point": "40", "icon": "fab fa-js" },
+        { "name": "Python", "point": "100", "icon": "fab fa-python" }
+      ]
+    },
+    {
+      "name": "frameworks",
+      "skills": [
+        { "name": "React", "point": "60", "icon": "fab fa-react" },
+        { "name": "Vue.js", "point": "40", "icon": "fab fa-vuejs" }
+      ]
+    }
+  ]
+}

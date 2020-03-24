@@ -1,0 +1,17 @@
+{
+  "title": "Experience",
+  "experience": [
+    {
+      "period": "Apr 2016 - Mar 2018",
+      "company": "X Co., Ltd.",
+      "url": "https://example.com",
+      "description": "Awesome Engineer."
+    },
+    {
+      "period": "Apr 2018 - Present",
+      "company": "Y Co., Ltd.",
+      "url": "https://example.com",
+      "description": "Awesome Engineer."
+    }
+  ]
+}
