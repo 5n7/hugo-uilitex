@@ -1,0 +1,22 @@
+{{ $experience := .Site.Data.experience }}
+
+<section id="experience" class="pink">
+  <h2 class="heading">{{ $experience.title }}</h2>
+
+  <div id="timeline">
+    {{ range $idx, $experience := $experience.experience }}
+    <div class="clearfix timeline-item">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content {{ if eq (mod $idx 2) 0 }} right {{ end }}">
+        <span class="date">{{ $experience.period }}</span>
+        <h6 class="h3 my-2">{{ $experience.company }}</h6>
+        <a target="_blank" href="{{ $experience.url }}">
+          <i class="fas fa-link"></i>
+          {{ $experience.url }}
+        </a>
+        <p>{{ $experience.description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,22 @@
+{{ $education := .Site.Data.education }}
+
+<section id="education" class="yellow">
+  <h2 class="heading">{{ $education.title }}</h2>
+
+  <div id="timeline">
+    {{ range $idx, $education := $education.education }}
+    <div class="clearfix timeline-item">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content {{ if eq (mod $idx 2) 0 }} right {{ end }}">
+        <span class="date">{{ $education.period }}</span>
+        <h6 class="h3 my-2">{{ $education.school }}</h6>
+        <a target="_blank" href="{{ $education.url }}">
+          <i class="fas fa-link"></i>
+          {{ $education.url }}
+        </a>
+        <p>{{ $education.description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

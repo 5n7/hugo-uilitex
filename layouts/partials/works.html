@@ -1,0 +1,23 @@
+{{ $works := .Site.Data.works }}
+
+<section class="green">
+  <h2 class="heading">{{ $works.title }}</h2>
+
+  <div class="justify-content-md-center row text-center">
+    {{ range $_, $work := $works.works }}
+    <div class="col-12 col-lg-6 col-md-6 mb-3">
+      <div class="card p-4">
+        <a target="_blank" href="{{ $work.url }}">
+          <h5 class="mt-4">{{ $work.title }}</h5></a
+        >
+        <span>
+          {{ range $_, $tag := $work.tags }}
+          <span class="badge badge-secondary">{{ $tag }}</span>
+          {{ end }}
+        </span>
+        <p class="text-muted">{{ $work.description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

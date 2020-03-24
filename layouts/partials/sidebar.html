@@ -1,0 +1,27 @@
+{{ $sidebar := .Site.Data.sidebar }} {{ $socials := .Site.Data.socials }}
+
+<section id="sidebar" class="align-items-center d-flex p-5 sidebar">
+  <div class="main-info">
+    <img
+      src="{{ .Site.BaseURL }}images/{{ $sidebar.avatar }}"
+      class="mb-3 rounded-circle"
+      width="160px"
+    />
+
+    <h1 class="heading">
+      <span>{{ $sidebar.text }}</span>
+      <span class="highlight">{{ $sidebar.highlightedText }}</span>
+    </h1>
+    <p class="text-muted">{{ $sidebar.description }}</p>
+
+    <div class="my-4 social">
+      {{ range $_, $social := $socials }}
+      <a target="_blank" href="{{ $social.url }}" rel="me">
+        <i class="{{ $social.icon }}"></i>
+      </a>
+      {{ end }}
+    </div>
+
+    <a href="#contact" class="btn btn-dark">Contact</a>
+  </div>
+</section>

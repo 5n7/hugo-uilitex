@@ -1,0 +1,49 @@
+{{ $config := .Site.Data.config }}
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      {{ .Site.Title }}
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="{{ $config.author }}" />
+    <meta name="description" content="{{ $config.description }}" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ .Site.BaseURL }}images/{{ $config.favicon }}"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7fab852bb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/styles.css"
+    />
+  </head>
+</html>
