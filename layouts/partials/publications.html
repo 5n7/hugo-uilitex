@@ -1,0 +1,19 @@
+{{ $publications := .Site.Data.publications }}
+
+<section class="green">
+  <h2 class="heading">{{ $publications.title }}</h2>
+
+  <div class="justify-content-md-center row text-center">
+    {{ range $_, $publication := $publications.publications }}
+    <div class="col-12 col-lg-12 col-md-12 mb-3">
+      <div class="card p-2">
+        <h5 class="mt-4">{{ $publication.title }}</h5>
+        <p>
+          {{ $publication.author }} <br />
+          {{ $publication.booktitle }}, {{ $publication.year }}
+        </p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

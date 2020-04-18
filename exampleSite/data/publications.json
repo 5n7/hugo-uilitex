@@ -1,0 +1,19 @@
+{
+  "title": "Publications",
+  "publications": [
+    {
+      "author": "Alice, Bob, and Charlie",
+      "title": "Customized UILite Theme for Hugo",
+      "booktitle": "UILiteX Conference",
+      "year": 2020,
+      "tags": ["hugo-theme"]
+    },
+    {
+      "author": "Alice, Bob, and Charlie",
+      "title": "Customized UILite Theme for Hugo",
+      "booktitle": "UILiteX Conference",
+      "year": 2020,
+      "tags": ["hugo-theme"]
+    }
+  ]
+}
